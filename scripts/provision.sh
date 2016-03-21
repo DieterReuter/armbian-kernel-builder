@@ -13,6 +13,7 @@ apt-get install -y git
 # Clone Armbian/lib repo
 mkdir -p builder
 cd builder
+ln -s /vagrant/userpatches userpatches
 git clone https://github.com/igorpecovnik/lib --depth 1
 cp lib/compile.sh .
 
